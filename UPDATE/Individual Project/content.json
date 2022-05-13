@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "fields": {
+        "title": "What is Climate Change?",
+        "text":"Climate change is a long-term shift in a place's temperature and usual weather patterns. Climate change can relate to a specific place or the entire world.",
+        "link": "https://www.nationalgeographic.org/encyclopedia/climate-change/#:~:text=Climate%20change%20is%20the,downpours%2C%20and%20winter%20storms.",
+        "image":"https://stuvera.com/wp-content/uploads/2018/07/climate-change-solutions.jpg"
+      }
+    },{
+      "fields": {
+        "title": "Why is Climate Change a Serious Problem?",
+        "text": "Climate change is the greatest threat to human health in recorded history, experts warn. World Health Organization Director-General Tedros Adhanom Ghebreyesus says hazards presented by climate change might surpass those caused by any one illness.",
+        "link": "https://www.nationalgeographic.com/science/article/why-climate-change-is-still-the-greatest-threat-to-human-health",
+        "image": "https://th.bing.com/th/id/OIP.PqHgoWl59XHZ3jQ01pZNsQHaE3?pid=ImgDet&rs=1"
+      }
+    },{
+      "fields": {
+        "title": "Who is Most responsible?",
+        "text": "Rich countries account for just 12 percent of the global population but are responsible for 50 percent of planet-warming greenhouse gases. Over the past few decades, the Earth's temperature has risen by around 1.1 degrees Celsius (2 degrees Fahrenheit). More powerful and deadly heat waves, floods, droughts, and wildfires.",
+        "link": "https://www.nytimes.com/interactive/2021/11/12/climate/cop26-emissions-compensation.html",
+        "image": "https://ychef.files.bbci.co.uk/976x549/p08hbxq4.webp"
+      }
+    },{
+      "fields": {
+        "title": "Where is it happening?",
+        "text": "Satellites and other technology developments have allowed scientists to glimpse the overall picture of global climate change. Human activity has indisputably warmed the atmosphere, oceans, and land. There is no doubt that higher quantities of greenhouse gases will cause the Earth to warm. Many NASA equipment fly because of their potential to influence the transmission of infrared energy through the atmosphere.",
+        "link": "https://climate.nasa.gov/evidence/",
+        "image": "https://ichef.bbci.co.uk/news/800/cpsprodpb/86F7/production/_121215543_sciencestory.jpg"
+      }
+    },{
+      "fields": {
+        "title": "When Will Climate Change Be Unavoidable?",
+        "text": "If we stopped producing greenhouse gases today, global temperatures would begin to level off within a few years. The effects of human actions on the Earth's climate to date are irreversible in the timeframe of humans alive now. However, it may not be too late to avoid or mitigate some of the worst consequences of climate change.",
+        "link": "https://climate.nasa.gov/faq/16/is-it-too-late-to-prevent-climate-change/",
+        "image": "https://i.guim.co.uk/img/media/8ddd5346fc5433862a1c15d4e7088681dd4540a7/0_186_5568_3341/master/5568.jpg?width=605&quality=85&auto=format&fit=max&s=fef86b73bdf091c50bf7eafe76ac1c3d"
+      }
+    }
+  ]}
