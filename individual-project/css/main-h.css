@@ -1,0 +1,291 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background: white;
+  color: black;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+
+body > header {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0),
+      rgba(107, 107, 107, 0.1)
+    ),
+    url(../images/jeremy-bishop-KrHNUF7rd3U-unsplash.jpg);
+  background-size: cover;
+  height: 45rem;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container {
+  padding: 0 6rem;
+}
+
+.current {
+  color: blueviolet;
+}
+
+.nav-center {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.nav-center p {
+  padding: 15px 12px;
+}
+
+.nav-center .nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-center .branding {
+  background-color: #ffffff;
+}
+
+.text-container {
+  padding-top: 10rem;
+  max-width: 30rem;
+}
+
+.text-container * {
+  padding: 1.5rem 0;
+}
+
+.text-container h2 {
+  font-size: 3rem;
+}
+
+.text-container p {
+  line-height: 1.8;
+}
+
+.text-container .btn {
+  padding: 0.6rem;
+  color: bisque;
+  border: 0;
+  border-radius: 5px;
+  background-color: blueviolet;
+}
+
+.content-container {
+  padding: 4rem 5rem;
+}
+
+.product-content-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgb(136, 136, 136) 0px 1px 10px;
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #996ed9;
+  margin-right: 10px;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__header h3 {
+  font-size: 15px;
+}
+
+.card__header p {
+  opacity: 50%;
+}
+.card--bg-purple {
+  background: hsl(263, 55%, 52%);
+  color: #fff;
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px right 100px;
+}
+
+.card--bg-gray-blue {
+  background: hsl(217, 19%, 35%);
+  color: #fff;
+}
+
+.card--bg-black-blue {
+  background: hsl(219, 29%, 14%);
+  color: #fff;
+}
+
+.card:nth-of-type(1),
+.card:nth-of-type(4) {
+  grid-column: span 2;
+}
+
+.card:nth-of-type(5) {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+
+
+
+@media (max-width: 58rem) {
+  .product-content-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .card:nth-of-type(1) {
+    grid-column: 1;
+  }
+
+  .card:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .card:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+
+.video-container {
+	height: 30rem;
+  background: linear-gradient( 168deg, rgb(122 0 185 / 95%), rgb(0 255 220));
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.description-container {
+  text-align: center;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+iframe {
+	border-radius: 20px;
+  margin: auto;
+  display: block;
+  border: 0;
+  width: 450px;
+  height: 255px;
+}
+.title {
+  margin-top: 15vh;
+  margin-bottom: 4rem;
+}
+
+.title h2 {
+  color: var(--clr-grey-1);
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+
+.section-center {
+  max-width: var(--fixed-width);
+}
+
+.question {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.question-title h4{
+  transition: var(--transition)
+}
+
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: var(--spacing);
+  color: var(--clr-grey-1);
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--clr-grey-1);
+  transition: var(--transition);
+}
+
+
+.question-text {
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  transition: opacity 1s, padding 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.question-text p {
+  margin-bottom: 0;
+}
+
+.show-text .question-text {
+  padding: 1rem 0 1.5rem 0;
+  opacity: 1;
+  height: auto;
+}
+
+.show-text .question-btn{
+  transform: rotate(-180deg);
+}
+.show-text .question-title h4 {
+ font-size: 1rem;
+}
