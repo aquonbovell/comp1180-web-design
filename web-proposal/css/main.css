@@ -9,17 +9,24 @@
 }
 
 body {
-  background: #edf2f8;
+  background: url(../images/huy-nguyen.jpg) fixed;
+  background-size: cover;
   font-family: "Barlow Semi Condensed", sans-serif;
   line-height: 1.7;
   font-size: 1.125rem;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   color: lightskyblue;
+}
+
+main > div > h2, main >  div > h3{
+  text-transform: capitalize;
+  text-align: center;
 }
 
 hr {
@@ -35,7 +42,7 @@ header {
 
 .content-container {
   border-radius: 35px;
-  box-shadow: rgb(175, 175, 175) 0px 0px 20px 20px;
+  box-shadow: rgba(175, 175, 175, 0.3) 0px 0px 20px 20px;
   margin: 50px auto;
   padding: 2rem;
   width: 90%;
