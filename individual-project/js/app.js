@@ -21,7 +21,6 @@ questions.forEach(function (question) {
         question.classList.toggle("show-text");
     });
 });
-
 // class Data {
 //     async getContent() {
 //         try {

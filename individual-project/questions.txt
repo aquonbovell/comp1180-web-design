@@ -1,0 +1,46 @@
+<!-- question text 
+					<div class="question-text">
+						<p>Yes and no. The ozone hole is not causing global warming, but it is affecting atmospheric
+							circulation.
+						</p>
+					</div>
+				</article>
+				<!- end single question -->
+				<!-- single question --
+				<article class="question">
+					<div class="question-title">
+						<h4>What’s the difference between climate change and global warming?</h4>
+						<span class="question-btn ">
+							<span class="plus-icon ">
+								<i class="fas fa-chevron-down "></i>
+							</span>
+						</span>
+					</div>
+					<!- question text --
+					<div class="question-text">
+						<p>“Global warming” refers to the long-term warming of the planet. “Climate change” encompasses
+							global warming, but refers to the broader range of changes that are happening to our planet,
+							including rising sea levels; shrinking mountain glaciers; accelerating ice melt in
+							Greenland, Antarctica and the Arctic; and shifts in flower/plant blooming times.
+						</p>
+					</div>
+				</article>
+				<!- end single question -->
+				<!-- single question ->
+				<article class="question">
+					<div class="question-title">
+						<h4>What is the greenhouse effect?</h4>
+						<span class="question-btn ">
+							<span class="plus-icon ">
+								<i class="fas fa-chevron-down "></i>
+							</span>
+						</span>
+					</div>
+					<!- question text --
+					<div class="question-text">
+						<p>The greenhouse effect is the way in which heat is trapped close to Earth's surface by
+							“greenhouse gases.”
+						</p>
+					</div>
+				</article>-->
+				<!-- end single question -->
