@@ -1,155 +1,117 @@
-:root {
-  --ff: Helvetica, Arial, sans-serif;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+	--clr-primary: rgb(0,0,0);
+	--clr-light: rgb(212, 212, 212);
+	--clr-dark:rgb(0, 0, 17);
 }
 
 body {
-  background: url(../images/huy-nguyen.jpg) fixed;
-  background-size: cover;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  line-height: 1.7;
-  font-size: 1.125rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: lightskyblue;
-}
-
-main > div > h2, main >  div > h3{
-  text-transform: capitalize;
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 90%;
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.125rem;
+	color: var(--clr-dark);
+	line-height: 1.6;
 }
 
 header {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+	background-color: var(--clr-light);
+	padding: 1rem;
+	text-align: center;
 }
 
-.content-container {
-  border-radius: 35px;
-  box-shadow: rgba(175, 175, 175, 0.3) 0px 0px 20px 20px;
-  margin: 50px auto;
-  padding: 2rem;
-  width: 90%;
-  background-color: rgba(51, 49, 48, 0.966);
-  color: lightgray;
+.nav-list{
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
-@media (min-width: 50rem) {
-  .text-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-
-  .container-1,
-  .container-4,
-  .container-5 {
-    grid-column: span 2;
-  }
+.nav-list-item > a{
+	text-decoration: none;
+	color: inherit;
 }
 
-@media (min-width: 68rem) {
-  .content-container {
-    width: 60rem;
-  }
+.main{
+	background: white;
+	background-position: center;
+	background-size: cover;
+	padding: 1em;
+}
+.main-overlay{
+	opacity: 1;
 }
 
-/* images */
-.logo {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
+.main-title{
+	line-height: 1;
+	font-weight: bold;
+	font-size: 3rem;
 }
 
-.service-img {
-  float: right;
-  width: 9rem;
-  border-radius: 100px;
+.container img{
+	float: left;
+	margin-right: 1rem;
+	max-width: 10rem;
+	border-radius: 1rem;
+}
+table{
+	margin: 1rem auto;
 }
 
-@media (min-width: 65rem) {
-  .product-industry-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1.5rem;
-  }
+.table{
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: visibility 0.1s, opacity 0.5s ease-in-out;
 }
 
-.product-industry-img {
-  width: 16rem;
-  margin: auto;
-  display: block;
+caption strong{
+	font-size: 1.5rem;
 }
 
-.industry-analysis-img,
-.business-model-img {
-  margin-right: 10px;
-  width: 16rem;
+footer{
+	display: flex;
+	padding: 1em 2em;
+	color: var(--clr-light);
+	background: var(--clr-dark);
+	justify-content: center;
+	text-align: center;
 }
 
-.business-model-img {
-  float: right;
-}
-
-.industry-analysis-img {
-  float: left;
-}
-
-/* table */
-caption {
-  grid-column: span 2;
-  font-size: 1.5em;
-}
-table {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 3rem;
-}
-
-thead tr {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 4rem;
-  background-color: rgb(53, 53, 51);
-  border: 1px solid rgb(39, 39, 38);
-  border-collapse: collapse;
-}
-
-tbody tr {
-  display: grid;
-  grid-auto-rows: 4rem;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-}
-
-tbody {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-th {
-  background-color: rgb(25, 25, 26);
-  color: lightskyblue;
-  padding-bottom: 16px;
-}
-
-footer {
-  text-align: center;
+@media (min-width: 37rem){
+	header, .main{
+		padding: 1rem 2rem;
+	}
+	header{
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav-list{
+		display: flex;
+		gap: 2rem;
+	}
+	.concept-statement{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+	.concept-statement :nth-child(1) {
+		grid-column: span 2;
+	}
+	.table{
+		visibility: visible;
+		height: auto;
+		overflow: visible;
+		opacity: 1;
+	}
 }
