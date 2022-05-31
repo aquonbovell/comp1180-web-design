@@ -162,7 +162,7 @@ a {
   grid-template-columns: 1fr;
   gap: 3rem;
   background:-moz-linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));background: linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));
-  justify-items: center;
+  justify-content: space-around;
 }
 
 .video-description{
@@ -351,7 +351,6 @@ iframe {
 	background-color: var(--clr-primary);
 }
 
-/*responsive*/
 @media(min-width: 28rem){
   .footer{
     grid-template-columns: 1fr 1fr;
