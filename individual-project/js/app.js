@@ -1,7 +1,8 @@
 const questions = document.querySelectorAll(".question");
 const navlist = document.querySelector(".nav-list");
 const menuBtn = document.querySelector(".menu-btn");
-const latestnewsDOM = document.querySelector('.latest-news');
+const latestnewsDOM = document.querySelector(".latest-news");
+
 let menuOpen = false;
 
 menuBtn.addEventListener("click", () => {
@@ -29,48 +30,48 @@ questions.forEach(function (question) {
   });
 });
 
-class Products {
-  async getProducts() {
-      try {
-          let result = await fetch("news.json");
-          let data = await result.json();
-          let products = data.items;
-          products = products.map(item => {
-              const { title, link} = item.fields;
-              const {day, month, year} = item.fields.date;
-              return { title, link, day, month,year};
-          });
-          return products;
-      } catch (error) {
-          console.log(error);
-      }
+class News {
+  async getNews() {
+    try {
+      let result = await fetch("../news.json");
+      let data = await result.json();
+      let news = data.items;
+      news = news.map((item) => {
+        const { title, link } = item.fields;
+        const { day, month, year } = item.fields.date;
+        return { title, link, day, month, year };
+      });
+      return news;
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 
 class UI {
-  displayProduct(product) {
-    let result = '';
-    product.forEach(product => {
+  displayNews(news_item) {
+    let result = "";
+    news_item.forEach((news_item) => {
       result += `<li>
                     <h3>
-                      <a href="${product.link}">
-                        ${product.title}
+                      <a href="${news_item.link}">
+                        ${news_item.title}
                       </a>
                     </h3>
                     <div>
-                      <span>${product.month}</span> <span>${product.day}</span><span>${product.year}</span>
+                      - <span>${news_item.month}</span> <span>${news_item.day}</span>,<span>${news_item.year}</span>
                     </div>
                   </li>`;
-      console.log(product.day);
     });
     latestnewsDOM.innerHTML = result;
   }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
-  const products = new Products();
+  const news = new News();
   const ui = new UI();
   //get all products
-  products.getProducts().then(products => {
-    ui.displayProduct(products);
+  news.getNews().then((news_item) => {
+    ui.displayNews(news_item);
   });
 });

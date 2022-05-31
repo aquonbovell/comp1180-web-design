@@ -84,9 +84,10 @@ a {
 
 .nav-list-item {
   margin: 0rem;
-
+  border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 600;
+  transition: background 0.5s linear, color 0.5s linear;
 }
 
 .nav-list-item:hover {
@@ -172,7 +173,7 @@ a {
   }
   .nav-list {
     flex-direction: row;
-    clip-path: circle(144% at 100% 1%);
+    clip-path: none;
   }
 }
 
@@ -201,7 +202,6 @@ a {
 }
 
 .card {
-  overflow: hidden;
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: rgb(136, 136, 136) 0px 1px 10px;
@@ -262,28 +262,44 @@ a {
 
 .latest-news{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.latest-news li{
-  list-style-type: none;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  row-gap: 3rem;
+  padding: 4rem 0;
 }
 
 .latest-news li{
   display: grid;
+  padding: 1rem;
+  list-style-type: none;
+  border-radius: 1rem;
+  box-shadow: 0px 0.5rem 0.5rem rgba(110, 109, 109, 0.644);
+  transition: transform .5s linear, background 0.5s linear, color 0.5s linear;
+  position: relative;
+  height: calc(100% + 1.5rem);
+}
+
+.latest-news li:hover{
+  background: var(--clr-tertiarty);
+  color: var(--clr-primary);
+  transform: translateY(-0.5rem);
 }
 
 .latest-news div{
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  color: var(--clr-secondary);
+  position: absolute;
+  transition: color 0.5s linear;
+  bottom: 1rem;
+  right: 1rem;
 }
 
-.latest-news div :first-of-type{
-  grid-column: span 2;
+.latest-news li:hover div{
+  color: var(--clr-primary);
 }
 
+.latest-news li a{
+  color: inherit;
+}
 
 .video-container {
   margin: auto;
