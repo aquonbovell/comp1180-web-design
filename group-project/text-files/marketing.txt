@@ -1,0 +1,60 @@
+<h1>4 P's of Marketing</h1>
+    <dl>
+        <dt>Promotion</dt>
+        <dd>Dancs Designs will take both a traditional approach to promotion/placement of our product (newspaper,radio
+            and television advertisements) as well as a more modern approach (through social media platforms and a
+            website). A part of the promotion will be the nature of our product itself, our superior and spectacular
+            product will have customers discussing the services they received in a positive light, thereby attracting
+            more customers.</dd>
+        <dt>Product</dt>
+        <dd>The products Dancs Designs will be offering are our artistic skills that will help to style/augment the
+            appearance of the building as well as sourcing the materials(furniture etc) that will be used for this
+            purpose. Our products would satiate consumers' demand for an unconventional style of interior designing.
+        </dd>
+        <dt>Price</dt>
+        <dd>On the spectrum of cheap to expensive, our prices lay somewhere on the upper-end however,the price of our
+            product is simply a reflection of it's quality. The price will work as a tool to attract high-end customers
+            to our product by giving it the feel of being more exclusive and classy.</dd>
+        <dt>Place</dt>
+        <dd>Dancs Designs' website and social media platforms will allow for potential clients to view some of the
+            buildings that were styled by us, as well as allowing them to make contact with us via telephone/cellular
+            phone, email address or by filling out and submitting a form which would give them the option of describing
+            the exact services they desire.</dd>
+    </dl>
+    <h1>4 P's of Marketing</h1>
+    <dl>
+        <dt>Promotion</dt>
+        <dd>
+            Dancs Designs will take both a traditional approach to
+            promotion/placement of our product (newspaper,radio and television
+            advertisements) as well as a more modern approach (through social media
+            platforms and a website). A part of the promotion will be the nature of
+            our product itself, our superior and spectacular product will have
+            customers discussing the services they received in a positive light,
+            thereby attracting more customers.
+        </dd>
+        <dt>Product</dt>
+        <dd>
+            The products Dancs Designs will be offering are our artistic skills that
+            will help to style/augment the appearance of the building as well as
+            sourcing the materials(furniture etc) that will be used for this
+            purpose. Our products would satiate consumers' demand for an
+            unconventional style of interior designing.
+        </dd>
+        <dt>Price</dt>
+        <dd>
+            On the spectrum of cheap to expensive, our prices lay somewhere on the
+            upper-end however,the price of our product is simply a reflection of
+            it's quality. The price will work as a tool to attract high-end
+            customers to our product by giving it the feel of being more exclusive
+            and classy.
+        </dd>
+        <dt>Place</dt>
+        <dd>
+            Dancs Designs' website and social media platforms will allow for
+            potential clients to view some of the buildings that were styled by us,
+            as well as allowing them to make contact with us via telephone/cellular
+            phone, email address or by filling out and submitting a form which would
+            give them the option of describing the exact services they desire.
+        </dd>
+    </dl>

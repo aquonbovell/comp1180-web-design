@@ -36,7 +36,7 @@ class Products {
             //     content_type: "comfyHouseProductsExample"
             // });
             // let products = contentful.items;
-            let result = await fetch("products.json");
+            let result = await fetch("./json/products.json");
             let data = await result.json();
             let products = data.items;
             
