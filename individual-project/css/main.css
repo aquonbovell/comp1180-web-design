@@ -260,6 +260,31 @@ a {
   }
 }
 
+.latest-news{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.latest-news li{
+  list-style-type: none;
+}
+
+.latest-news li{
+  display: grid;
+}
+
+.latest-news div{
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.latest-news div :first-of-type{
+  grid-column: span 2;
+}
+
+
 .video-container {
   margin: auto;
   padding: 3rem;
