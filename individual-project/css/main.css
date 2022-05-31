@@ -69,7 +69,7 @@ a {
   gap: 3em;
 }
 
-.nav-list-item {
+.nav-list-item, .footer-col ul {
   list-style-type: none;
 }
 
@@ -157,12 +157,23 @@ a {
 .video-container {
   margin: auto;
   padding: 3rem;
-  max-width: 110rem;
+  max-width: 100rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  background:linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));
-  background:-moz-linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));
+  gap: 3rem;
+  background:-moz-linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));background: linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));
+  justify-items: center;
+}
+
+.video-description{
+  margin: auto;
+  max-width: 50ch;
+}
+
+.video-description h3{
+  margin: auto;
+  padding: 1rem 0;
+  font-size: 1.5rem;
 }
 
 iframe {
@@ -180,6 +191,12 @@ iframe {
   }
 }
 
+.faqs-title{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 .faqs{
   display: grid;
   grid-template-columns: 1fr;
@@ -188,8 +205,11 @@ iframe {
   align-items: center;
 }
 
-.questions-container{
-  padding: 3rem;
+.question {
+  justify-self: center;
+  border-radius: 1rem;
+  box-shadow: rgb(136, 136, 136) 0px 1px 10px;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .question:nth-child(4n+1){
@@ -200,37 +220,6 @@ iframe {
 .question:nth-child(4n+3){
   background-color: var(--clr-secondary);
   color: var(--clr-primary);
-}
-
-.questions-title{
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 64rem){
-  .video-container{
-    grid-template-columns: 1fr 450px;
-  }
-  .faqs{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .question:nth-child(4n){
-    background-color: var(--clr-accent);
-    color: var(--clr-primary);
-  }
-  .question:nth-child(4n+3){
-    background-color: var(--clr-primary);
-    color: black;
-  }
-}
-
-.question {
-  justify-self: center;
-  border-radius: 1rem;
-  box-shadow: rgb(136, 136, 136) 0px 1px 10px;
-  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .question-title {
@@ -274,75 +263,96 @@ iframe {
   transform: rotate(-180deg);
 }
 
+@media (min-width: 60rem){
+  .video-container{
+    grid-template-columns: 50ch 1fr;
+    gap: 0rem;
+  }
+  .faqs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .question:nth-child(4n){
+    background-color: var(--clr-accent);
+    color: var(--clr-primary);
+  }
+  .question:nth-child(4n+3){
+    background-color: var(--clr-primary);
+    color: black;
+  }
+}
+
 .footer{
   display: grid;
   gap: 2rem;
-	background-color: #24262b;
+	background-color: var(--clr-secondary);
   padding: 3rem;
 }
 
 .footer-col{
   width: 100%;
-  padding: 0 15px;
+  padding: 0.5rem;
 }
 
 .footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
+	font-size: 1.125rem;
+	color: var(--clr-primary);
 	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
+	margin-bottom: 2rem;
+	font-weight: bold;
 	position: relative;
 }
 
 .footer-col h4::before{
 	content: '';
 	position: absolute;
-	left:0;
-	bottom: -10px;
+	left: 0;
+	bottom: -0.5rem;
 	background-color: var(--clr-accent);
-	height: 2px;
+	height: 0.15em;
 	box-sizing: border-box;
-	width: 50px;
+	width: 3rem;
 }
 
 .footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 1.1rem;
 	text-transform: capitalize;
-	color: #ffffff;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 500;
 	color: #bbbbbb;
 	display: block;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease-out;
 }
+
 .footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
+	color: var(--clr-primary);
+	padding-left: 1rem;
+  font-weight: 600;
 }
+
 .footer-col .social-links a{
 	display: inline-block;
-	height: 40px;
-	width: 40px;
+	height: 3rem;
+	width: 3rem;
 	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
+	margin:0 1rem 1rem 0;
 	text-align: center;
-	line-height: 40px;
+	line-height: 3rem;
 	border-radius: 50%;
-	color: #ffffff;
+	color: var(--clr-primary);
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+	color: var(--clr-tertiarty);
+	background-color: var(--clr-primary);
 }
 
 /*responsive*/
-@media(min-width: 460px){
+@media(min-width: 28rem){
   .footer{
     grid-template-columns: 1fr 1fr;
   }
@@ -351,7 +361,7 @@ iframe {
   }
 }
 
-@media (min-width: 720px){
+@media (min-width: 45rem){
   .footer{
     grid-template-columns: repeat(3,1fr);
   }
