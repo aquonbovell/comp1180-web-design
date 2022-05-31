@@ -161,6 +161,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  background:linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));
   background:-moz-linear-gradient(25deg, var(--clr-accent),var(--clr-accent),var(--clr-gradient));
 }
 
