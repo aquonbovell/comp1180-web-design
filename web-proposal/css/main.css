@@ -1,117 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap");
+
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-	--clr-primary: rgb(0,0,0);
-	--clr-light: rgb(212, 212, 212);
-	--clr-dark:rgb(0, 0, 17);
+  --clr-white: rgb(255, 255, 255);
+  --clr-hero-overlay: rgba(0, 0, 0, 0.85);
+  --clr-bg-dark: rgba(238, 238, 238, 0.849);
+  --clr-bg-light: rgba(238, 238, 238, 0.7);
 }
 
 body {
-	margin: 0;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 1.125rem;
-	color: var(--clr-dark);
-	line-height: 1.6;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  background: rgba(4, 0, 255, 0.4);
+  line-height: 1.6;
 }
 
 header {
-	background-color: var(--clr-light);
-	padding: 1rem;
-	text-align: center;
+  height: 100%;
+  background: url(../images/bg.jpg);
+  background-position: center center;
+  text-align: center;
+  color: var(--clr-white);
 }
 
-.nav-list{
-	display: flex;
-	justify-content: space-between;
-	margin: 1em 0;
-	padding: 0;
-	list-style: none;
-	font-size: 0.875rem;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 1px;
+header .wrapper {
+  padding: 4rem 2rem;
+  margin: 0;
+  background: var(--clr-hero-overlay);
 }
 
-.nav-list-item > a{
-	text-decoration: none;
-	color: inherit;
+header h1 {
+  margin: auto;
+  text-transform: uppercase;
+  max-width: 20ch;
 }
 
-.main{
-	background: white;
-	background-position: center;
-	background-size: cover;
-	padding: 1em;
-}
-.main-overlay{
-	opacity: 1;
+header p {
+  padding: 1.5rem 0;
+  text-transform: capitalize;
 }
 
-.main-title{
-	line-height: 1;
-	font-weight: bold;
-	font-size: 3rem;
+header span {
+  display: block;
+  font-weight: 500;
 }
 
-.container img{
-	float: left;
-	margin-right: 1rem;
-	max-width: 10rem;
-	border-radius: 1rem;
-}
-table{
-	margin: 1rem auto;
+header a {
+  text-decoration: none;
+  color: var(--clr-white);
+  text-transform: none;
 }
 
-.table{
-	visibility: hidden;
-	height: 0;
-	overflow: hidden;
-	opacity: 0;
-	transition: visibility 0.1s, opacity 0.5s ease-in-out;
+
+main h2 {
+  margin: auto;
+  padding: 1em;
+  width: fit-content;
 }
 
-caption strong{
-	font-size: 1.5rem;
+.container > *{
+	max-width: 1200px;
+	margin: auto;
 }
 
-footer{
-	display: flex;
-	padding: 1em 2em;
-	color: var(--clr-light);
-	background: var(--clr-dark);
-	justify-content: center;
-	text-align: center;
+.container {
+  padding: 1em;
+  background: var(--clr-bg-dark);
 }
 
-@media (min-width: 37rem){
-	header, .main{
-		padding: 1rem 2rem;
-	}
-	header{
-		display: flex;
-		justify-content: space-between;
-	}
-	.nav-list{
-		display: flex;
-		gap: 2rem;
-	}
-	.concept-statement{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-	}
-	.concept-statement :nth-child(1) {
-		grid-column: span 2;
-	}
-	.table{
-		visibility: visible;
-		height: auto;
-		overflow: visible;
-		opacity: 1;
+.concept-statement :nth-of-type(2n) {
+  background-color: var(--clr-bg-light);
+}
+
+.container h3 {
+  font-size: 1.6em;
+  padding: 0.6em 0;
+  color: rgb(0, 184, 55);
+}
+
+.feasibility-analysis .container:nth-of-type(2n-1),
+.business-model .container {
+  background: var(--clr-bg-light);
+}
+
+.table .container {
+  background: var(--clr-bg-light);
+  overflow-x: auto;
+}
+
+footer {
+  padding: 2em;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 1.3rem;
 	}
 }
