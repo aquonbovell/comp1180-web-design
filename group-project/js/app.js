@@ -1,4 +1,5 @@
 const menu = document.querySelector('.menu');
+const nav = document.querySelector('nav');
 
 let menuOpen = false;
 
@@ -6,10 +7,10 @@ menu.addEventListener("click", () => {
   if (!menuOpen) {
     menu.classList.add("open");
     menuOpen = true;
-    // navlist.classList.add("open");
+    nav.classList.add("open");
   } else {
     menu.classList.remove("open");
     menuOpen = false;
-    // navlist.classList.remove("open");
+    nav.classList.remove("open");
   }
 });
