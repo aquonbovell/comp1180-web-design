@@ -1,2 +1,2 @@
-# wed-design
-web dev
+# comp-1170-web-design
+web designs
