@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <title>DANCS DESINS</title>
+</head>
+
+<body>
+
+    <!--star of navbar-->
+
+    <nav class="nav-center">
+        <!--nav logo and menu button-->
+        <div class="nav-header ">
+            <button class="nav-toggle "><i class="fas fa-bars "></i></button>
+            <span class="logo">Dancs Design</span>
+            <!--nav links-->
+            <ul class="links bar">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <!-- <li>
+                        <a href="services.html ">Services</a>
+                    </li> -->
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+
+        <!--nav links-->
+        <ul class="links dropdown">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!--end of navbar-->
+    <!--start of hero-->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">furniture collection</h1>
+            <div class="banner-btn">Shop Now</div>
+        </div>
+    </header>
+    <!--end of hero-->
+    <main>
+        <!--products-->
+        <section class="products">
+            <div class="section-title">
+                <h2>Our Products</h2>
+            </div>
+            <div class="products-center">
+                <!--single product-->
+                <article class="product">
+                    <div class="img-container">
+                        <img src="images/product-1.jpeg" alt="product" class="product-img">
+                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart">Add to bag</i></button>
+                    </div>
+                    <h3>Queen Bed</h3>
+                    <h4>$16</h4>
+                </article>
+                <!--end product-->
+
+            </div>
+        </section>
+        <!--end products-->
+        <!--cart-->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart"><i class="fas fa-window-close"></i></span>
+                <h2>your cart</h2>
+                <div class="cart-content">
+
+                </div>
+                <div class="cart-footer">
+                    <h3>your total : $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="social-icons ">
+            <li>
+                <a href="https://www.twitter.com ">
+                    <i class="fab fa-facebook "></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com ">
+                    <i class="fab fa-twitter "></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com ">
+                    <i class="fab fa-instagram "></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com ">
+                    <i class="fab fa-linkedin "></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com ">
+                    <i class="fab fa-telegram "></i>
+                </a>
+            </li>
+        </ul>
+        <p>Copyright &copy; 2021 DANCS Designs All rights reserved. </p>
+    </footer>
+    <!--end of cart-->
+    <!--app js-->
+    <script src="app.js"></script>
+</body>
+
+</html>
