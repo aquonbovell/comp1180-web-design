@@ -9,29 +9,31 @@
 }
 
 :root {
-	--clr-white: rgb(255, 255, 255);
-	--clr-hero-overlay: rgba(0, 0, 0, 0.85);
-	--clr-bg-dark: rgba(238, 238, 238, 0.849);
-	--clr-bg-light: rgba(238, 238, 238, 0.7);
+	--clr-primary: #c2fbd1;
+	--clr-text:#0f6b55;
+	--clr-primary-accent: #f3ce41;
+	--clr-secondary-accent: #ebe3d2;
+	--clr-hero-overlay: rgba(0, 0, 0, 0.75);
 }
 
 body {
 	font-family: "Work Sans", sans-serif;
 	font-size: 1.2rem;
-	background: rgba(4, 0, 255, 0.4);
+	background: var(--clr-primary);
 	line-height: 1.6;
+	color: var(--clr-text);
 }
 
 header {
-	height: 100%;
+	height: max-content;
 	background: url(../images/bg.jpg);
 	background-position: center center;
 	text-align: center;
-	color: var(--clr-white);
+	color: var(--clr-secondary-accent);
 }
 
 header .wrapper {
-	padding: 4rem 2rem;
+	padding: 4em 2em;
 	margin: 0;
 	background: var(--clr-hero-overlay);
 }
@@ -49,70 +51,87 @@ header p {
 
 header span {
 	display: block;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 header a {
 	text-decoration: none;
-	color: var(--clr-white);
+	color: inherit;
 	text-transform: none;
 }
 
-
-main h2 {
-	margin: auto;
-	padding: 1em;
-	width: fit-content;
-}
-
-.container > * {
+.concept-statement, .feasibility-analysis, .business-model, .industry-analysis, .table{
+	padding: 1.2em;
 	max-width: 1100px;
 	margin: auto;
 }
 
-.container {
-	padding: 1em;
-	background: var(--clr-bg-dark);
+section > h2, .container >h3{
+	margin: 0;
+	width: max-content;
+	font-weight: 400;
+	text-transform: uppercase;
+	position: relative;
 }
 
-.concept-statement :nth-of-type(2n) {
-	background-color: var(--clr-bg-light);
+section > h2::before,.container > h3::before {
+	content: "";
+	display: block;
+	background: var(--clr-primary-accent);
+	border-radius: 5rem;
+	position: absolute;
 }
 
-.container h3 {
-	font-size: 1.6em;
-	padding: 0.6em 0;
-	color: rgb(0, 184, 55);
+.container > h3 {
+	font-size: 1.1em;
+	max-width: 23ch;
 }
 
-.feasibility-analysis .container:nth-of-type(2n-1),
-.business-model .container {
-	background: var(--clr-bg-light);
+section > h2::before{
+	width: 48%;
+	height: 0.5rem;
+	top:.01em;
 }
 
-.table .container {
+.container > h3::before{
+	z-index: -20;
+	width: 65%;
+	height: 0.25rem;
+	bottom:0;
+}
+
+section p{
+	padding: 0.5em;
+}
+
+.table {
+	min-width: 450px;
 	background: var(--clr-bg-light);
 	overflow-x: auto;
 }
 
 table {
+	margin: auto;
 	border: 1px solid;
-	border-collapse: unset;
+	border-collapse: collapse;
 }
 
-table caption strong {
-	font-size: 1.5rem;
-}
-
-tbody :nth-child(2n) {
-	background: var(--clr-bg-light);
+th{
+	width: 25ch;
 }
 
 footer {
 	padding: 2em;
+	background: var(--clr-primary-accent);
 	text-transform: capitalize;
 	font-weight: 500;
 	text-align: center;
+}
+
+@media (min-width: 545px) {
+	.container > h3{
+		max-width: unset;
+	}
 }
 
 @media (min-width: 768px) {
